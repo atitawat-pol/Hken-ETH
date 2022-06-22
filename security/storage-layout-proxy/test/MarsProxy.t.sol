@@ -13,7 +13,7 @@ contract MarsProxyTest is Test {
     function testInit() public {
         string memory name = marsProxy.name();
         assertEq(name, "Mars");
-        console2.log("Hello");
+        console2.logString("Hello");
     }
 
     function testExample() public {

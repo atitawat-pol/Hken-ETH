@@ -844,8 +844,8 @@
       }
     },
     "test/MarsProxy.t.sol": {
-      "lastModificationDate": 1655887661321,
-      "contentHash": "a5e5a0bf16fbea1b26364288ccdf5991",
+      "lastModificationDate": 1655887920405,
+      "contentHash": "2eaf6c534d4b145c2df4b45acea7ca72",
       "sourceName": "test/MarsProxy.t.sol",
       "solcConfig": {
         "settings": {
