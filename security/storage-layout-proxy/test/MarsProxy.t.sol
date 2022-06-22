@@ -32,6 +32,6 @@ contract MarsProxyTest is Test {
     }
 
     function testFee() public {
-        assertEq(5, marsProxyV3.fee()); // It's going to fail bc. fee is no longer in V3 anymore.
+        assertEq(0, marsProxyV3.fee()); // It's going to fail bc. fee is no longer in V3 anymore.
     }
 }

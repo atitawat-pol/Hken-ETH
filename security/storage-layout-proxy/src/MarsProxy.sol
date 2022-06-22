@@ -26,6 +26,7 @@ contract MarsProxyV2 is MarsProxy {
 }
 
 contract MarsProxyV3 is MarsProxy {
+    uint public fee; // Avoid storage layout colision with tax, we have to copy fee from V2
     uint public tax = 5;
 
     function version() public pure returns (string memory) {

@@ -787,8 +787,8 @@
       }
     },
     "src/MarsProxy.sol": {
-      "lastModificationDate": 1655890029422,
-      "contentHash": "4b28e74b63400301ad8ae5e4cfe69908",
+      "lastModificationDate": 1655890800741,
+      "contentHash": "4ea5569067ee21ef558d615c5a189f65",
       "sourceName": "src/MarsProxy.sol",
       "solcConfig": {
         "settings": {
@@ -844,8 +844,8 @@
       }
     },
     "test/MarsProxy.t.sol": {
-      "lastModificationDate": 1655890191638,
-      "contentHash": "19f5aea47a768eb94862f5971d86f815",
+      "lastModificationDate": 1655890818544,
+      "contentHash": "479013bee091e5f920b991dd14510b08",
       "sourceName": "test/MarsProxy.t.sol",
       "solcConfig": {
         "settings": {
