@@ -9,6 +9,7 @@ contract MarsProxy is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableU
     function initialize() public initializer {
         __ERC20_init("Mars", "MARS");
         __Ownable_init_unchained();
+        __UUPSUpgradeable_init_unchained();
 
         _mint(msg.sender, 10000000 * 10 ** decimals());
     }
@@ -17,7 +18,7 @@ contract MarsProxy is Initializable, ERC20Upgradeable, UUPSUpgradeable, OwnableU
 }
 
 contract MarsProxyV2 is MarsProxy {
-    uint fee;
+    uint public fee;
 
     function version() public pure returns (string memory) {
         return "v2!";
@@ -25,7 +26,7 @@ contract MarsProxyV2 is MarsProxy {
 }
 
 contract MarsProxyV3 is MarsProxy {
-    uint tax;
+    uint public tax = 5;
 
     function version() public pure returns (string memory) {
         return "v3!";
