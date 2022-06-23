@@ -1,0 +1,58 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122042e05561fd71f79e03a2d01f76a4cf95fb705e5e3ad8fdb8cc8d306974a7fff564736f6c634300080f0033",
+    "sourceMap": "106:23:14:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea264697066735822122042e05561fd71f79e03a2d01f76a4cf95fb705e5e3ad8fdb8cc8d306974a7fff564736f6c634300080f0033",
+    "sourceMap": "106:23:14:-:0;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "ast": {
+    "absolutePath": "src/Proxy.sol",
+    "id": 21656,
+    "exportedSymbols": {
+      "Proxy": [
+        21655
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "80:49:14",
+    "nodes": [
+      {
+        "id": 21654,
+        "nodeType": "PragmaDirective",
+        "src": "80:24:14",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 21655,
+        "nodeType": "ContractDefinition",
+        "src": "106:23:14",
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Proxy",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          21655
+        ],
+        "name": "Proxy",
+        "nameLocation": "115:5:14",
+        "scope": 21656,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 14
+}

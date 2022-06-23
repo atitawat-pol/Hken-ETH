@@ -1,0 +1,33 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/InnerImplementation.sol",
+    "id": 21653,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "32:24:13",
+    "nodes": [
+      {
+        "id": 21652,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:13",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 13
+}
