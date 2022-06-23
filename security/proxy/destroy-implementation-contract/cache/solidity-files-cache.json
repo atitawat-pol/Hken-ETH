@@ -657,8 +657,8 @@
       }
     },
     "test/HKENToken.t.sol": {
-      "lastModificationDate": 1655968088685,
-      "contentHash": "c7257c9905366626ded469688b5fdc34",
+      "lastModificationDate": 1655968817955,
+      "contentHash": "73c2af368804b07705698f925889c61d",
       "sourceName": "test/HKENToken.t.sol",
       "solcConfig": {
         "settings": {

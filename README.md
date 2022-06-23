@@ -12,6 +12,7 @@ forge install OpenZeppelin/openzeppelin-contracts
 # forge install foundry testing
 forge install foundry-rs/forge-std
 ```
+Foundry deployer address is: 0xb4c79daB8f259C7Aee6E5b2Aa729821864227e84
 
 ## learning resources
 

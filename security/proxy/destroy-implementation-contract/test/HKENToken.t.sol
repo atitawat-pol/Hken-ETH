@@ -14,6 +14,10 @@ contract HKENTokenTest is Test {
         assertEq("HKENToken", hkentoken.symbol());
     }
 
+    function testOwner() public {
+        assertEq(0xb4c79daB8f259C7Aee6E5b2Aa729821864227e84, hkentoken.owner());
+    }
+
     function testExample() public {
         assertTrue(true);
     }
