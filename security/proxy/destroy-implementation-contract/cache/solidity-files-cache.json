@@ -455,6 +455,84 @@
         }
       }
     },
+    "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1656051316300,
+      "contentHash": "f2c979cfecf8af11ef36adeacb162ef3",
+      "sourceName": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol"
+      ],
+      "versionRequirement": "^0.8.2",
+      "artifacts": {
+        "Initializable": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Initializable.sol/Initializable.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1656051316308,
+      "contentHash": "e6ef0450f92cbe94a0e5bf1b55487b2b",
+      "sourceName": "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.1",
+      "artifacts": {
+        "AddressUpgradeable": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "AddressUpgradeable.sol/AddressUpgradeable.json"
+        }
+      }
+    },
     "script/Contract.s.sol": {
       "lastModificationDate": 1655966040750,
       "contentHash": "3642d05d9c479368231825c40aaa276a",
@@ -543,8 +621,8 @@
       }
     },
     "src/Implementation.sol": {
-      "lastModificationDate": 1655968195661,
-      "contentHash": "d35f218d81408d1c68959fd569542276",
+      "lastModificationDate": 1656059979017,
+      "contentHash": "ccd5f9b6140a797b0f4f539b2bdf560c",
       "sourceName": "src/Implementation.sol",
       "solcConfig": {
         "settings": {
@@ -572,7 +650,10 @@
           "libraries": {}
         }
       },
-      "imports": [],
+      "imports": [
+        "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol"
+      ],
       "versionRequirement": "^0.8.15",
       "artifacts": {
         "Implementation": {
@@ -618,10 +699,10 @@
         }
       }
     },
-    "src/Proxy.sol": {
-      "lastModificationDate": 1655968206617,
-      "contentHash": "1ad7fc7bc335f17bbd10a2a10e54ed4f",
-      "sourceName": "src/Proxy.sol",
+    "src/ProxyVault.sol": {
+      "lastModificationDate": 1656060225832,
+      "contentHash": "467c42655622a27606e64506abcb824c",
+      "sourceName": "src/ProxyVault.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -648,18 +729,21 @@
           "libraries": {}
         }
       },
-      "imports": [],
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
       "versionRequirement": "^0.8.15",
       "artifacts": {
-        "Proxy": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "Proxy.sol/Proxy.json"
+        "ProxyVault": {
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "ProxyVault.sol/ProxyVault.json"
         }
       }
     },
-    "test/HKENToken.t.sol": {
-      "lastModificationDate": 1655968817955,
-      "contentHash": "73c2af368804b07705698f925889c61d",
-      "sourceName": "test/HKENToken.t.sol",
+    "test/Destroy.t.sol": {
+      "lastModificationDate": 1656057614815,
+      "contentHash": "fd2677c5535abb0ba4317df32c911c37",
+      "sourceName": "test/Destroy.t.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -698,12 +782,16 @@
         "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "src/HKENToken.sol"
+        "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol",
+        "src/HKENToken.sol",
+        "src/Implementation.sol",
+        "src/ProxyVault.sol"
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "HKENTokenTest": {
-          "0.8.15+commit.e14f2714.Darwin.appleclang": "HKENToken.t.sol/HKENTokenTest.json"
+          "0.8.15+commit.e14f2714.Darwin.appleclang": "Destroy.t.sol/HKENTokenTest.json"
         }
       }
     }
