@@ -13,6 +13,8 @@ contract ProxyVault {
 
     function addInvestor(address _investor) external {
         // delegate call to implementation
-        implementation.delegatecall(_investor);
+        (bool success, bytes memory data) = implementation.delegatecall(
+            abi.encodeWithSignature("addInvestor(address)", _investor)
+            );
     }
 }

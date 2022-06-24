@@ -9,6 +9,7 @@
 forge init --force
 # forge install openzeppelin contracts library
 forge install OpenZeppelin/openzeppelin-contracts
+forge install OpenZeppelin/openzeppelin-contracts-upgradeable
 # forge install foundry testing
 forge install foundry-rs/forge-std
 ```
